@@ -1,10 +1,13 @@
 // ==================== CẤU HÌNH LINK TẢI APP & SEPAY VIETQR ====================
 const DOWNLOAD_CONFIG = {
   version: "v3.0.0",
-  releasesPage: "https://github.com/CuongFang/crmedia/releases/tag/v3.0.0",
-  windowsUrl: "https://github.com/CuongFang/crmedia/releases/latest",
-  macArmUrl: "https://github.com/CuongFang/crmedia/releases/latest",
-  macIntelUrl: "https://github.com/CuongFang/crmedia/releases/latest",
+  releasesPage: "https://github.com/CuongFang/CRMediaWeb/releases/tag/%23crmediatool",
+  windowsUrl:
+    "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool/CRMedia_Setup_v3.0.0_Windows_x64.exe",
+  macArmUrl:
+    "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool/CRMedia_v3.0.0_macOS_arm64.dmg",
+  macIntelUrl:
+    "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool/CRMedia_v3.0.0_macOS_x86_64.dmg",
   sepayBank: "Sacombank",
   sepayAccount: "050127995947",
 };
