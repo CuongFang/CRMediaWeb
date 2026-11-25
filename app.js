@@ -12,42 +12,49 @@ const DOWNLOAD_CONFIG = {
   sepayAccount: "050127995947",
 };
 
-// 5 ảnh minh họa chụp trực tiếp từ giao diện CRMedia v3.0 thực tế
+// 6 ảnh minh họa chụp trực tiếp từ giao diện CRMedia v3.0 thực tế
 const REAL_SHOWCASE_IMAGES = [
   {
     key: "overview",
     shortLabel: "Tổng hợp 4 tính năng",
     title: "Tổng hợp 4 Tính năng Lọc Ảnh AI Siêu Tốc — CRMedia v3.0",
     src: "assets/showcase/05_Tong_Hop_4_Tinh_Nang_CRMedia_v3.jpg",
-    badge: "REAL UI · 1/5",
+    badge: "REAL UI · 1/6",
+  },
+  {
+    key: "rawjpg",
+    shortLabel: "Lọc & Xóa RAW+JPG",
+    title: "Lọc & Xóa Cả Cặp RAW + JPG Mượt Như Photo Mechanic (860 cặp)",
+    src: "assets/showcase/06_Loc_Va_Xoa_Cap_RAW_JPG_Nhu_Photo_Mechanic.jpg",
+    badge: "RAW+JPG · 2/6",
   },
   {
     key: "multicam",
     shortLabel: "Đồng bộ nhiều máy",
     title: "Lọc 1.440+ Ảnh Siêu Tốc & Đồng Bộ Nhiều Máy Theo Giờ Chụp",
     src: "assets/showcase/01_Loc_Anh_Sieu_Toc_Dong_Bo_Nhieu_May.jpg",
-    badge: "MULTI-CAM · 2/5",
+    badge: "MULTI-CAM · 3/6",
   },
   {
     key: "duplicates",
     shortLabel: "Lọc ảnh trùng lặp",
     title: "Gom Nhóm Ảnh Trùng Lặp — 1 Chạm Giữ Bản Đẹp Nhất",
     src: "assets/showcase/02_Loc_Anh_Trung_Lap_Giu_Ban_Dep_Nhat.jpg",
-    badge: "TRÙNG LẶP · 3/5",
+    badge: "TRÙNG LẶP · 4/6",
   },
   {
     key: "defects",
     shortLabel: "Bắt lỗi Mờ/Tối/Cháy",
     title: "AI Tự Động Lọc Ảnh Lỗi: Mờ Rung · Tối · Cháy Sáng · Nhắm Mắt",
     src: "assets/showcase/03_Loc_Anh_Loi_Mo_Rung_Toi_Chay_Sang.jpg",
-    badge: "LỌC LỖI AI · 4/5",
+    badge: "LỌC LỖI AI · 5/6",
   },
   {
     key: "faces",
     shortLabel: "Cô dâu & Chú rể AI",
     title: "Nhận Dạng Khuôn Mặt ArcFace-R50 — Lọc Riêng Cô Dâu & Chú Rể",
     src: "assets/showcase/04_Nhan_Dang_Gom_Mat_Co_Dau_Chu_Re.jpg",
-    badge: "ARCFACE AI · 5/5",
+    badge: "ARCFACE AI · 6/6",
   },
 ];
 
@@ -100,10 +107,28 @@ const FEATURE_VIDEOS = [
 ];
 
 const FEATURE_TABS_DATA = {
+  rawjpg: {
+    accent: "#f59e0b",
+    accentRgb: "245, 158, 11",
+    tag: "01 · GỘP & XÓA CẶP RAW + JPG NHƯ PHOTO MECHANIC",
+    title: "Lọc & Xóa đồng bộ cả cặp RAW + JPG siêu mượt như Photo Mechanic",
+    desc: "Tự động ghép trọn 860 cặp RAW + JPG (1.720 file) thành 1 giao diện gọn sạch. Lướt bản JPG siêu mượt 0ms độ trễ, chấm sao hay bấm X loại và xóa 1 lần bay sạch cả 2 file RAW + JPG!",
+    points: [
+      "Hỗ trợ đầy đủ RAW mọi hãng (ARW, CR2, CR3, NEF, RAF, DNG) đi cặp với JPG — chuyển nhanh 4 chế độ hiển thị",
+      "Chấm 1–5★, gắn nhãn màu, đánh dấu Loại (X) đều tự đồng bộ lên cả file RAW gốc giống hệt Photo Mechanic",
+      "Nút '🗑 Xóa file Đã Loại (cả RAW + JPG)' dọn sạch cả 2 file cùng lúc, giải phóng ngay hàng chục GB ổ cứng",
+    ],
+    img: "assets/showcase/06_Loc_Va_Xoa_Cap_RAW_JPG_Nhu_Photo_Mechanic.jpg",
+    stageTitle: "Dự án thực tế Baron Studio (1.720 ảnh · 860 cặp RAW+JPG · 2 máy)",
+    stageTag: "RAW+JPG SYNC",
+    lightboxIdx: 1,
+    videoIdx: 0,
+    thumbTitle: "1. RAW+JPG Mechanic",
+  },
   multicam: {
     accent: "#38bdf8",
     accentRgb: "56, 189, 248",
-    tag: "01 · LỌC SIÊU TỐC & ĐỒNG BỘ NHIỀU MÁY",
+    tag: "02 · LỌC SIÊU TỐC & ĐỒNG BỘ NHIỀU MÁY",
     title: "Lọc 1.440+ ảnh siêu tốc & Đồng bộ nhiều máy theo giờ chụp",
     desc: "Chụp 2–3 máy ảnh bị lệch giờ? CRMedia tự cân chỉnh lệch giây để gộp chung vào 1 dòng thời gian chuẩn xác, đồng thời gộp cặp RAW+JPG giúp bạn lướt ảnh mượt không độ trễ.",
     points: [
@@ -114,14 +139,14 @@ const FEATURE_TABS_DATA = {
     img: "assets/showcase/01_Loc_Anh_Sieu_Toc_Dong_Bo_Nhieu_May.jpg",
     stageTitle: "Dự án thực tế 2may (1.440 ảnh · 2 máy ảnh · 422 khuôn mặt)",
     stageTag: "MULTI-CAM SYNC",
-    lightboxIdx: 1,
+    lightboxIdx: 2,
     videoIdx: 0,
-    thumbTitle: "1. Đồng bộ nhiều máy",
+    thumbTitle: "2. Đồng bộ nhiều máy",
   },
   duplicates: {
     accent: "#10b981",
     accentRgb: "16, 185, 129",
-    tag: "02 · GOM NHÓM ẢNH TRÙNG LẶP",
+    tag: "03 · GOM NHÓM ẢNH TRÙNG LẶP",
     title: "Tự gom loạt ảnh chụp liên thanh — 1 chạm giữ bản đẹp nhất",
     desc: "AI tự nhận diện và gom hàng chục loạt chụp liên tiếp thành từng nhóm riêng. Mỗi nhóm được AI tự so sánh độ nét, biểu cảm để gắn sẵn nhãn xanh '★ Tốt nhất'.",
     points: [
@@ -132,14 +157,14 @@ const FEATURE_TABS_DATA = {
     img: "assets/showcase/02_Loc_Anh_Trung_Lap_Giu_Ban_Dep_Nhat.jpg",
     stageTitle: "Tab Nhóm trùng lặp (74 nhóm) — So sánh & giữ bản nét nhất",
     stageTag: "AUTO DEDUPE",
-    lightboxIdx: 2,
+    lightboxIdx: 3,
     videoIdx: 0,
-    thumbTitle: "2. Lọc ảnh trùng lặp",
+    thumbTitle: "3. Lọc ảnh trùng lặp",
   },
   defects: {
     accent: "#f43f5e",
     accentRgb: "244, 63, 94",
-    tag: "03 · AI TỰ ĐỘNG LỌC ẢNH LỖI",
+    tag: "04 · AI TỰ ĐỘNG LỌC ẢNH LỖI",
     title: "Bắt sạch ảnh lỗi: Mờ rung · Quá tối · Cháy sáng · Nhắm mắt",
     desc: "Không còn phải căng mắt soi từng tấm ảnh out nét hay lỡ nháy mắt. AI cục bộ tự chấm điểm chất lượng từng tấm trên thang 100 kèm biểu đồ Histogram RGB & thông số EXIF.",
     points: [
@@ -150,14 +175,14 @@ const FEATURE_TABS_DATA = {
     img: "assets/showcase/03_Loc_Anh_Loi_Mo_Rung_Toi_Chay_Sang.jpg",
     stageTitle: "Bảng Tự động lọc lỗi 3 cấp độ & Điểm chất lượng AI",
     stageTag: "AI DEFECT SCAN",
-    lightboxIdx: 3,
+    lightboxIdx: 4,
     videoIdx: 0,
-    thumbTitle: "3. Bắt lỗi Mờ/Tối/Cháy",
+    thumbTitle: "4. Bắt lỗi Mờ/Tối/Cháy",
   },
   faces: {
     accent: "#f59e0b",
     accentRgb: "245, 158, 11",
-    tag: "04 · NHẬN DẠNG KHUÔN MẶT ARCFACE-R50",
+    tag: "05 · NHẬN DẠNG KHUÔN MẶT ARCFACE-R50",
     title: "Nhận dạng AI tự gom riêng ảnh Cô dâu, Chú rể & Từng nhân vật",
     desc: "Công nghệ nhận dạng khuôn mặt ArcFace-R50 chạy hoàn toàn cục bộ giúp tự tách và xếp sẵn Cô dâu, Chú rể lên đầu danh sách để lọc ảnh theo đúng nhân vật bạn cần.",
     points: [
@@ -168,15 +193,15 @@ const FEATURE_TABS_DATA = {
     img: "assets/showcase/04_Nhan_Dang_Gom_Mat_Co_Dau_Chu_Re.jpg",
     stageTitle: "Nhận dạng ArcFace-R50 — Đang lọc riêng Cô dâu (192 ảnh)",
     stageTag: "ARCFACE-R50",
-    lightboxIdx: 4,
+    lightboxIdx: 5,
     videoIdx: 0,
-    thumbTitle: "4. Cô dâu & Chú rể AI",
+    thumbTitle: "5. Cô dâu & Chú rể AI",
   },
   overview: {
     accent: "#fbbf24",
     accentRgb: "251, 191, 36",
-    tag: "05 · TOÀN CẢNH BỘ CÔNG CỤ LỌC ẢNH AI",
-    title: "Tổng hợp 4 màn hình thực tế — Tăng tốc lọc file gấp 5 lần",
+    tag: "06 · TOÀN CẢNH BỘ CÔNG CỤ LỌC ẢNH AI",
+    title: "Tổng hợp màn hình thực tế — Tăng tốc lọc file gấp 5 lần",
     desc: "Từ lúc chép thẻ nhớ 2–3 máy ảnh cho tới khi chọn xong bộ ảnh đẹp nhất gửi khách, dàn trang Album 300 DPI hay xuất Lightroom .XMP — tất cả gói gọn trong CRMedia v3.0.",
     points: [
       "100% Chạy cục bộ trên Windows & macOS — không phụ thuộc mạng, ảnh gốc không bao giờ rời ổ cứng",
@@ -188,11 +213,11 @@ const FEATURE_TABS_DATA = {
     stageTag: "FULL SUITE v3.0",
     lightboxIdx: 0,
     videoIdx: 0,
-    thumbTitle: "5. Tổng quan 4 tính năng",
+    thumbTitle: "6. Tổng quan 4 tính năng",
   },
 };
 
-const TAB_ORDER = ["multicam", "duplicates", "defects", "faces", "overview"];
+const TAB_ORDER = ["rawjpg", "multicam", "duplicates", "defects", "faces", "overview"];
 
 // ==================== HERO AUTO-MOTION CAROUSEL + 3D TILT ====================
 let heroSlideIdx = 0;
@@ -455,11 +480,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }).join("");
   }
 
-  // Gắn sự kiện 5 tab tính năng
+  // Gắn sự kiện 6 tab tính năng
   document.querySelectorAll(".ftab").forEach((btn) => {
     btn.addEventListener("click", () => renderFeatureTab(btn.dataset.tab));
   });
-  renderFeatureTab("multicam");
+  renderFeatureTab("rawjpg");
 
   // Render Video Motion Gallery (5 tập 16:9 dưới 1 phút)
   const vgrid = document.getElementById("video-gallery");
