@@ -1,0 +1,31 @@
+{
+  "version": "3.0.2",
+  "release_date": "2026-11-25",
+  "summary": "Tự động cập nhật Auto-Updater, Đóng dấu Logo thương hiệu khi xuất ảnh & Sửa triệt để lỗi Slide dọc trên iMac/macOS",
+  "notes": [
+    "Tích hợp Auto-Updater: tự kiểm tra bản mới, tự tải ở nền, xác thực SHA-256 và cài đặt 1 chạm trên Windows & macOS",
+    "Thêm tính năng Đóng dấu Logo thương hiệu (PNG/PSD) kèm xem trước trực tiếp trong mục Xuất ảnh của Lọc ảnh",
+    "Sửa triệt để lỗi Operation not permitted và lỗi cắt video 3s khi xuất Slide dọc có gắn Logo trên iMac/macOS",
+    "Thêm nút hỗ trợ Zalo trực tiếp (0905 555 730 — Cường) ngay trong phần Kích hoạt bản quyền"
+  ],
+  "downloads": {
+    "windows_x64": {
+      "filename": "CRMedia_Setup_v3.0.2_Windows_x64.exe",
+      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.02/CRMedia_Setup_v3.0.2_Windows_x64.exe",
+      "size_bytes": 174050525,
+      "sha256": "0d1b9f15e50c9d487efd809ead56d81b4fcc83c4ca80d899c7ff23e427bda651"
+    },
+    "macos_arm64": {
+      "filename": "CRMedia_v3.0.2_macOS_arm64.dmg",
+      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.02/CRMedia_v3.0.2_macOS_arm64.dmg",
+      "size_bytes": 158499517,
+      "sha256": "639499ab9bd790b25c6736b6d9ebdaa382824445a2ddfb71164bd29a1d945553"
+    },
+    "macos_x86_64": {
+      "filename": "CRMedia_v3.0.2_macOS_x86_64.dmg",
+      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.02/CRMedia_v3.0.2_macOS_x86_64.dmg",
+      "size_bytes": 168614902,
+      "sha256": "3ece96610a2c3a0375f62932114b18db1ad11d62f0c7f0119181c9048ff46689"
+    }
+  }
+}
