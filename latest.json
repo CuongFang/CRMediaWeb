@@ -1,31 +1,31 @@
 {
-  "version": "3.0.2",
+  "version": "3.0.3",
   "release_date": "2026-11-25",
-  "summary": "Tự động cập nhật Auto-Updater, Đóng dấu Logo thương hiệu khi xuất ảnh & Sửa triệt để lỗi Slide dọc trên iMac/macOS",
+  "summary": "Kích hoạt bản quyền Online trực tiếp qua Supabase Cloud, Auto-Updater, Đóng dấu Logo & Sửa lỗi Slide dọc trên iMac",
   "notes": [
-    "Tích hợp Auto-Updater: tự kiểm tra bản mới, tự tải ở nền, xác thực SHA-256 và cài đặt 1 chạm trên Windows & macOS",
-    "Thêm tính năng Đóng dấu Logo thương hiệu (PNG/PSD) kèm xem trước trực tiếp trong mục Xuất ảnh của Lọc ảnh",
-    "Sửa triệt để lỗi Operation not permitted và lỗi cắt video 3s khi xuất Slide dọc có gắn Logo trên iMac/macOS",
-    "Thêm nút hỗ trợ Zalo trực tiếp (0905 555 730 — Cường) ngay trong phần Kích hoạt bản quyền"
+    "Tích hợp sẵn máy chủ kích hoạt bản quyền Online Supabase Cloud (nhập key ngắn CRM-MTH / CRM-PRO kích hoạt ngay, khóa dùng thử toàn cầu & tự mở khóa VietQR)",
+    "Tự động cập nhật Auto-Updater: tự kiểm tra bản mới, tự tải nền xác thực SHA-256 và cài đặt 1 chạm trên Windows & macOS",
+    "Đóng dấu Logo thương hiệu (PNG/PSD) kèm xem trước trực tiếp trong mục Xuất ảnh của Lọc ảnh",
+    "Sửa triệt để lỗi Operation not permitted và lỗi cắt video 3s khi xuất Slide dọc có gắn Logo trên iMac/macOS"
   ],
   "downloads": {
     "windows_x64": {
-      "filename": "CRMedia_Setup_v3.0.2_Windows_x64.exe",
-      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.02/CRMedia_Setup_v3.0.2_Windows_x64.exe",
-      "size_bytes": 174050525,
-      "sha256": "0d1b9f15e50c9d487efd809ead56d81b4fcc83c4ca80d899c7ff23e427bda651"
+      "filename": "CRMedia_Setup_v3.0.3_Windows_x64.exe",
+      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.03/CRMedia_Setup_v3.0.3_Windows_x64.exe",
+      "size_bytes": 174048746,
+      "sha256": "a14b0d9fa31cb74ff877c9834c41df9a329b90e9cbba4af41e0d8e30a3654cc5"
     },
     "macos_arm64": {
-      "filename": "CRMedia_v3.0.2_macOS_arm64.dmg",
-      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.02/CRMedia_v3.0.2_macOS_arm64.dmg",
-      "size_bytes": 158499517,
-      "sha256": "639499ab9bd790b25c6736b6d9ebdaa382824445a2ddfb71164bd29a1d945553"
+      "filename": "CRMedia_v3.0.3_macOS_arm64.dmg",
+      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.03/CRMedia_v3.0.3_macOS_arm64.dmg",
+      "size_bytes": 158491392,
+      "sha256": "58126b5b0cfbdb6b79f07eecb86e4c0eedfb44e05f28ff245db8dc28f34c84fe"
     },
     "macos_x86_64": {
-      "filename": "CRMedia_v3.0.2_macOS_x86_64.dmg",
-      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.02/CRMedia_v3.0.2_macOS_x86_64.dmg",
-      "size_bytes": 168614902,
-      "sha256": "3ece96610a2c3a0375f62932114b18db1ad11d62f0c7f0119181c9048ff46689"
+      "filename": "CRMedia_v3.0.3_macOS_x86_64.dmg",
+      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.03/CRMedia_v3.0.3_macOS_x86_64.dmg",
+      "size_bytes": 165637376,
+      "sha256": "200c384d5084c31d28b30447ab15574b40ad045974bdd83209120a0f1fd175d8"
     }
   }
 }
