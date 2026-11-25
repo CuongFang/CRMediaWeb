@@ -1,6 +1,6 @@
 # CRMedia — Official Landing Page & Download Website
 
-Website giới thiệu chính thức và trang tải phần mềm **CRMedia v3.0.3** (Windows `.exe` · macOS Apple Silicon `.dmg` · macOS Intel `.dmg`), tích hợp sẵn:
+Website giới thiệu chính thức và trang tải phần mềm **CRMedia v3.0.4** (Windows `.exe` · macOS Apple Silicon `.dmg` · macOS Intel `.dmg`), tích hợp sẵn:
 - **Hero & 5 Motion tương tác trực tiếp bằng ảnh cưới thật** (Lọc Ảnh AI & ArcFace-R50, Dàn Trang Album 300 DPI, Studio Làm Video Slide GPU RTX, Cổng Gửi Khách Zero-Trust & Hệ Sinh Thái Studio).
 - **Trọn bộ 5 Video Motion 16:9 dưới 1 phút** có thuyết minh tiếng Việt & phụ đề động.
 - **Bảng giá & Thanh toán SePay VietQR** (Dùng thử 3 ngày miễn phí · Gói Tháng 99.000đ · Gói Vĩnh Viễn 999.000đ).
