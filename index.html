@@ -9,8 +9,9 @@
       content="CRMedia v3.0 — App AI chạy cục bộ cho Nhiếp ảnh gia & Wedding Studio: Lọc 3.000 ảnh RAW trong vài phút, Dàn trang Album 300 DPI, Làm Video Slide GPU RTX, Cổng gửi khách Zero-Trust & Ổ NAS Z:\."
     />
     <meta property="og:title" content="CRMedia v3.0 — App AI Toàn năng cho Nhiếp Ảnh Gia & Wedding Studio" />
-    <meta property="og:description" content="Lọc ảnh RAW AI · Dàn trang Album 300 DPI · Video Slide GPU · Gửi khách Zero-Trust · Ổ NAS Z:\. Dùng thử miễn phí 3 ngày!" />
-    <meta property="og:image" content="assets/photos/wedding_couple_hero.jpg" />
+    <meta property="og:description" content="Lọc ảnh RAW AI · Gom trùng 1 chạm · Bắt lỗi mờ/tối/cháy · Nhận dạng Cô dâu Chú rể · Đồng bộ nhiều máy. Dùng thử miễn phí 3 ngày!" />
+    <meta property="og:url" content="https://tool.camranhmedia.vn" />
+    <meta property="og:image" content="https://tool.camranhmedia.vn/assets/showcase/05_Tong_Hop_4_Tinh_Nang_CRMedia_v3.jpg" />
     <link rel="icon" type="image/png" href="assets/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -94,90 +95,60 @@
           </div>
         </div>
 
-        <!-- Khung Motion sống động bằng ảnh thật -->
-        <div class="hero-stage">
-          <div class="stage-bar">
-            <div class="dots"><i></i><i></i><i></i></div>
-            <div class="stage-title">CRMedia v2.0 — Show Minh &amp; Lan (3.120 ảnh RAW+JPG)</div>
-            <div class="stage-tag mono">AI Đang quét</div>
-          </div>
-
-          <div class="hero-motion-grid">
-            <div class="hero-laser"></div>
-
-            <div class="hm-card is-good">
-              <img src="assets/photos/wedding_couple_hero.jpg" alt="Ảnh cưới cặp đôi" />
-              <span class="hm-badge">RAW+JPG</span>
-              <div class="hm-face" style="left: 34%; top: 28%; width: 22%; height: 36%">
-                <span>Cô dâu 99%</span>
-              </div>
-              <span class="hm-stars">★★★★★</span>
+        <!-- Khung trình diễn Motion bằng 5 ảnh giao diện thật CRMedia v3.0 -->
+        <div class="hero-real-wrap">
+          <div class="hero-stage" id="hero-tilt-card">
+            <div class="stage-bar">
+              <div class="dots"><i></i><i></i><i></i></div>
+              <div class="stage-title" id="hero-slide-title">Ảnh chụp thực tế CRMedia v3.0 — Tổng hợp 4 tính năng AI</div>
+              <div class="stage-tag mono" id="hero-slide-badge">REAL UI · 1/5</div>
             </div>
 
-            <div class="hm-card is-bad">
-              <img src="assets/photos/wedding_groom_portrait.jpg" alt="Ảnh bị mờ" />
-              <span class="hm-reject">✕ MỜ / RUNG</span>
+            <div class="hero-real-viewport" id="hero-real-viewport" onclick="openImgModal(heroSlideIdx)">
+              <img class="hero-slide-img active" src="assets/showcase/05_Tong_Hop_4_Tinh_Nang_CRMedia_v3.jpg" alt="Tổng hợp 4 tính năng CRMedia v3.0" />
+              <img class="hero-slide-img" src="assets/showcase/01_Loc_Anh_Sieu_Toc_Dong_Bo_Nhieu_May.jpg" alt="Lọc ảnh siêu tốc & Đồng bộ nhiều máy theo giờ chụp" />
+              <img class="hero-slide-img" src="assets/showcase/02_Loc_Anh_Trung_Lap_Giu_Ban_Dep_Nhat.jpg" alt="Lọc ảnh trùng lặp & 1 chạm giữ bản đẹp nhất" />
+              <img class="hero-slide-img" src="assets/showcase/03_Loc_Anh_Loi_Mo_Rung_Toi_Chay_Sang.jpg" alt="AI tự động lọc ảnh lỗi mờ rung, tối, cháy sáng, nhắm mắt" />
+              <img class="hero-slide-img" src="assets/showcase/04_Nhan_Dang_Gom_Mat_Co_Dau_Chu_Re.jpg" alt="Nhận dạng khuôn mặt AI lọc riêng Cô dâu & Chú rể" />
+              <div class="rf-sheen"></div>
+              <div class="rf-laser"></div>
+              <span class="zoom-hint-badge">🔍 Bấm xem Full HD</span>
             </div>
 
-            <div class="hm-card is-good">
-              <img src="assets/photos/wedding_bride_portrait.jpg" alt="Chân dung cô dâu" />
-              <span class="hm-badge">Nụ cười ★</span>
-              <span class="hm-stars">★★★★★</span>
-            </div>
+            <div class="hero-prog-track"><div class="hero-prog-bar" id="hero-prog-bar"></div></div>
 
-            <div class="hm-card is-bad">
-              <img src="assets/photos/wedding_rings_decor.jpg" alt="Ảnh trùng lặp" />
-              <span class="hm-reject">✕ LOẠI TRÙNG</span>
+            <div class="hero-stage-footer">
+              <div class="hero-slide-dots" id="hero-slide-dots"></div>
+              <span class="mono" style="color: #6ee7b7">● Giao diện thật 100% · Local AI</span>
             </div>
-
-            <div class="hm-card is-good">
-              <img src="assets/photos/wedding_ceremony_moment.jpg" alt="Khoảnh khắc lễ đường" />
-              <span class="hm-badge">Lễ đường · 97đ</span>
-              <span class="hm-stars">★★★★★</span>
-            </div>
-
-            <div class="hm-card is-good">
-              <img src="assets/photos/wedding_outdoor_sunset.jpg" alt="Hoàng hôn Đà Lạt" />
-              <span class="hm-badge">Highlight · 99đ</span>
-              <span class="hm-stars">★★★★★</span>
-            </div>
-          </div>
-
-          <div class="hero-stage-footer">
-            <div class="taste-pill">
-              <span style="color: #e9d5ff; font-weight: 700">✦ Chọn theo Gu AI</span>
-              <div class="taste-track"><div class="taste-fill"></div></div>
-              <strong class="mono" style="color: #fcd34d">98%</strong>
-            </div>
-            <span class="mono" style="color: #6ee7b7">● Local AI · Không cần mạng</span>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- ==================== 5 MOTION TƯƠNG TÁC TÍNH NĂNG BẰNG ẢNH THẬT ==================== -->
+    <!-- ==================== 5 MOTION TÍNH NĂNG BẰNG ẢNH GIAO DIỆN THẬT ==================== -->
     <section id="features" class="block">
       <div class="container">
         <div class="sec-head">
-          <span class="sec-eyebrow">TRẢI NGHIỆM TƯƠNG TÁC TRỰC TIẾP</span>
-          <h2>5 Mô-đun cốt lõi — Gộp trọn quy trình Studio</h2>
+          <span class="sec-eyebrow">ẢNH CHỤP GIAO DIỆN THẬT CRMEDIA v3.0</span>
+          <h2>Hiệu Ứng Motion Thực Chiến — 5 Tính Năng Cốt Lõi</h2>
           <p>
-            Chuyển qua từng tab bên dưới để tương tác trực tiếp với Motion minh họa bằng ảnh cưới thật hoặc bấm xem video thuyết minh dưới 1 phút cho từng tính năng.
+            Toàn bộ hình ảnh bên dưới được chụp trực tiếp từ phần mềm CRMedia v3.0 đang xử lý show cưới thật (1.440+ ảnh, 2 máy ảnh, 422 khuôn mặt). Bấm từng tính năng hoặc phóng to xem chi tiết Full HD.
           </p>
         </div>
 
         <div class="feature-tabs">
-          <button class="ftab active" data-tab="cull">1. Lọc Ảnh AI &amp; Gom Mặt</button>
-          <button class="ftab" data-tab="collage">2. Dàn Trang Album 300 DPI</button>
-          <button class="ftab" data-tab="slideshow">3. Làm Video Slide GPU</button>
-          <button class="ftab" data-tab="share">4. Gửi Khách &amp; Selfie AI</button>
-          <button class="ftab" data-tab="ecosystem">5. Ổ NAS, 4G &amp; Drive</button>
+          <button class="ftab active" data-tab="multicam">1. Lọc Siêu Tốc &amp; Nhiều Máy</button>
+          <button class="ftab" data-tab="duplicates">2. Lọc Ảnh Trùng Lặp</button>
+          <button class="ftab" data-tab="defects">3. Bắt Lỗi Mờ / Tối / Cháy</button>
+          <button class="ftab" data-tab="faces">4. Nhận Dạng Cô Dâu &amp; Chú Rể</button>
+          <button class="ftab" data-tab="overview">5. Tổng Quan 4 Tính Năng</button>
         </div>
 
         <div class="feature-showcase" id="feature-showcase">
           <div class="fs-info">
-            <span class="fs-tag mono" id="fs-tag">01 · LỌC ẢNH AI</span>
-            <h3 id="fs-title">Lọc 3.000 ảnh RAW+JPG siêu tốc ngay trên máy tính</h3>
+            <span class="fs-tag mono" id="fs-tag">01 · LỌC SIÊU TỐC &amp; MULTI-CAM</span>
+            <h3 id="fs-title">Lọc 1.440+ ảnh siêu tốc &amp; Đồng bộ nhiều máy theo giờ chụp</h3>
             <p class="fs-desc" id="fs-desc"></p>
             <ul class="fs-points" id="fs-points"></ul>
             <div class="fs-actions">
@@ -186,15 +157,18 @@
             </div>
           </div>
 
-          <div class="fs-stage-card">
+          <div class="fs-stage-card" id="fs-tilt-card">
             <div class="stage-bar">
               <div class="dots"><i></i><i></i><i></i></div>
-              <div class="stage-title" id="fs-stage-title">CRMedia Interactive Preview</div>
-              <div class="stage-tag mono" id="fs-stage-tag">Live Demo</div>
+              <div class="stage-title" id="fs-stage-title">Ảnh chụp thực tế CRMedia v3.0</div>
+              <div class="stage-tag mono" id="fs-stage-tag">REAL UI</div>
             </div>
             <div class="fs-stage-body" id="fs-stage-body"></div>
           </div>
         </div>
+
+        <!-- Dải 5 ảnh thumbnail thật để chuyển nhanh -->
+        <div class="real-thumb-strip" id="real-thumb-strip"></div>
       </div>
     </section>
 
@@ -390,6 +364,21 @@
         <div>© 2026 CRMedia Studio · Windows .exe &amp; macOS .dmg · 100% Tiếng Việt</div>
       </div>
     </footer>
+
+    <!-- ==================== MODAL PHÓNG TO ẢNH GIAO DIỆN THẬT FULL HD ==================== -->
+    <div class="modal-backdrop" id="img-modal" onclick="if (event.target === this) closeImgModal()">
+      <div class="img-modal-box">
+        <div class="modal-head">
+          <strong id="im-title" style="font-size: 14px">Giao diện thực tế CRMedia v3.0</strong>
+          <button class="modal-close" onclick="closeImgModal()">✕</button>
+        </div>
+        <div class="img-modal-stage">
+          <button class="lb-nav-btn lb-prev" onclick="stepImgModal(-1)" title="Ảnh trước">‹</button>
+          <img id="im-img" alt="CRMedia Full HD" />
+          <button class="lb-nav-btn lb-next" onclick="stepImgModal(1)" title="Ảnh kế tiếp">›</button>
+        </div>
+      </div>
+    </div>
 
     <!-- ==================== MODAL XEM VIDEO MOTION ==================== -->
     <div class="modal-backdrop" id="video-modal" onclick="if (event.target === this) closeVideoModal()">
