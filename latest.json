@@ -1,31 +1,32 @@
 {
-  "version": "3.0.4",
-  "release_date": "2026-11-25",
-  "summary": "Sửa lỗi màn đen khi tự cập nhật trên Windows, Kích hoạt Online Supabase Cloud & Đóng dấu Logo thương hiệu",
+  "version": "3.0.6",
+  "release_date": "2026-11-26",
+  "summary": "Chỉnh màu & nạp LUT Lightroom (.xmp/.cube), Auto chỉnh ảnh AI, Đồng bộ màu + Mịn da AI, Cắt cúp ảnh (Crop) & vá lỗi SSL trên macOS",
   "notes": [
-    "Sửa triệt để lỗi hiện màn đen /I PID khi tự động cập nhật trên Windows (chuyển sang PowerShell chạy ẩn hoàn toàn không hiện cửa sổ đen)",
-    "Tích hợp sẵn máy chủ kích hoạt bản quyền Online Supabase Cloud (nhập key ngắn CRM-MTH / CRM-PRO kích hoạt ngay, khóa dùng thử toàn cầu & tự mở khóa VietQR)",
-    "Đóng dấu Logo thương hiệu (PNG/PSD) kèm xem trước trực tiếp trong mục Xuất ảnh của Lọc ảnh",
-    "Sửa triệt để lỗi Operation not permitted và lỗi cắt video 3s khi xuất Slide dọc có gắn Logo trên iMac/macOS"
+    "Mới: Bộ công cụ Chỉnh màu không phá hủy ngay trong Lọc ảnh (chỉ hiện khi click vào ảnh): nạp Preset Lightroom (.xmp) & 3D LUT (.cube), 6 Preset cưới sẵn, thanh kéo WB/Tint/Exposure/Contrast/Highlights/Shadows/Whites/Blacks/Vibrance/Saturation/Clarity & So sánh Trước/Sau",
+    "Mới: Auto Chỉnh Ảnh AI 1 chạm & Đồng bộ màu tự động cân bằng sáng tối đa máy tích hợp Mịn da AI (giữ nét mắt & vân da tự nhiên) ngay trong mục Đồng bộ màu",
+    "Mới: Cắt cúp ảnh & Xoay thẳng đường chân trời (Crop · Phím C) không phá hủy ảnh gốc với lưới tỷ lệ 1/3, xoay nhanh 90° và các tỷ lệ chuẩn (3:2, 2:3, 4:5, 1:1, 16:9, 9:16)",
+    "Vá triệt để lỗi SSL CERTIFICATE_VERIFY_FAILED khi kích hoạt bản quyền / Dùng thử 3 ngày trên macOS (tích hợp sẵn chứng chỉ CA certifi)",
+    "Tối ưu giao diện: đưa đồng hồ đếm ngược thời gian sử dụng lên thanh tiêu đề phía trên cho gọn thoáng và bỏ ghi kèm file .xmp khi xuất ảnh"
   ],
   "downloads": {
     "windows_x64": {
-      "filename": "CRMedia_Setup_v3.0.4_Windows_x64.exe",
-      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.04/CRMedia_Setup_v3.0.4_Windows_x64.exe",
-      "size_bytes": 174050688,
-      "sha256": "4c0b7e987c6895266ebd4986418e07cc0b0226712cef3d7a2627c164a5dfdcc8"
+      "filename": "CRMedia_Setup_v3.0.6_Windows_x64.exe",
+      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.06/CRMedia_Setup_v3.0.6_Windows_x64.exe",
+      "size_bytes": 174108059,
+      "sha256": "cfd2a413c41eec5381ee57c93f401458308c45086a826982ef98d8267818d7d5"
     },
     "macos_arm64": {
-      "filename": "CRMedia_v3.0.4_macOS_arm64.dmg",
-      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.04/CRMedia_v3.0.4_macOS_arm64.dmg",
-      "size_bytes": 158500618,
-      "sha256": "d30b210ee6863853fe3c27b38c25c8a06704b9c4c0ed1ea8a7eed15e24d27964"
+      "filename": "CRMedia_v3.0.6_macOS_arm64.dmg",
+      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.06/CRMedia_v3.0.6_macOS_arm64.dmg",
+      "size_bytes": 158002696,
+      "sha256": "36b8dfd280febe1ec914d5d2e43e9a183aeb97a2501cbd32ac5ffcec3d914d63"
     },
     "macos_x86_64": {
-      "filename": "CRMedia_v3.0.4_macOS_x86_64.dmg",
-      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.04/CRMedia_v3.0.4_macOS_x86_64.dmg",
-      "size_bytes": 168616426,
-      "sha256": "e424c921c3a1eec33c1865e4456eaa0f0560f763af0624a3bfff56e583cb3ed2"
+      "filename": "CRMedia_v3.0.6_macOS_x86_64.dmg",
+      "url": "https://github.com/CuongFang/CRMediaWeb/releases/download/%23crmediatool3.06/CRMedia_v3.0.6_macOS_x86_64.dmg",
+      "size_bytes": 168499634,
+      "sha256": "5dd99301e8d7074c9b8e0b82ea3bdabcdfc097c1f6fae584093e37ade6b12d90"
     }
   }
 }
